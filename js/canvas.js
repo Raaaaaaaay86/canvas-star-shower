@@ -110,7 +110,7 @@ class MiniStar extends Star{
   }
 }
 
-const createMoitainRange = (mountainAmount, height, color) => {
+const createMoutainRange = (mountainAmount, height, color) => {
   for (let i = 0; i < mountainAmount; i++) {
     context.beginPath();
     const mountainWidth = canvas.width / mountainAmount;
@@ -157,9 +157,9 @@ const animate = () => {
     backgroundStar.draw();
   })
 
-  createMoitainRange(1, canvas.height - 50, '#384551');
-  createMoitainRange(2, canvas.height - 100, '#2B3843');
-  createMoitainRange(3, canvas.height - 300, '#26333E');
+  createMoutainRange(1, canvas.height - 50, '#384551');
+  createMoutainRange(2, canvas.height - 100, '#2B3843');
+  createMoutainRange(3, canvas.height - 300, '#26333E');
   context.fillStyle= '#182028';
   context.fillRect(0, canvas.height - groundHeight, canvas.width, groundHeight);
 
